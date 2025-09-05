@@ -15,12 +15,10 @@ public class WriteToOutputFile {
                     }
                 }
                 return file;
-            }
-            catch (FileNotFoundException e) {
+            } catch (FileNotFoundException e) {
                 System.err.println("Неправильно указан путь для записи файлов");
                 System.exit(1);
-            }
-            catch (IOException e) {
+            } catch (IOException e) {
                 System.err.println("Ошибка записи в файл");
                 System.exit(1);
             }

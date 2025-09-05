@@ -41,7 +41,7 @@ public class SearchElements {
         try {
             new BigInteger(new BigDecimal(element).toPlainString());
             return true;
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e){
             return false;
         }
     }
@@ -50,7 +50,7 @@ public class SearchElements {
         try {
             new BigDecimal(element);
             return true;
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e){
             return false;
         }
     }

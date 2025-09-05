@@ -6,6 +6,7 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 public class ProcessingStatistics {
+
     public static void shortStatistic(File file) {
        try{
            int count = 0;

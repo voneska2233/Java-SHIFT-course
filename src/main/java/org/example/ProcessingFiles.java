@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProcessingFiles {
+
     private final List<String> listOfInteger = new ArrayList<>();
     private final List<String> listOfString = new ArrayList<>();
     private final List<String> listOfFloat = new ArrayList<>();
@@ -31,11 +32,14 @@ public class ProcessingFiles {
             System.out.println(e.getMessage());
             System.exit(1);
         }
-        File fileOfInteger = WriteToOutputFile.writeToOutputFile(listOfInteger, arguments.getPath() + arguments.getPrefix() + "integers.txt", arguments.isBoolUpdate());
+        File fileOfInteger = WriteToOutputFile.writeToOutputFile(listOfInteger, arguments.getPath() +
+                arguments.getPrefix() + "integers.txt", arguments.isBoolUpdate());
         listOfFile.add(fileOfInteger);
-        File fileOfFloat = WriteToOutputFile.writeToOutputFile(listOfFloat, arguments.getPath() + arguments.getPrefix() + "floats.txt", arguments.isBoolUpdate());
+        File fileOfFloat = WriteToOutputFile.writeToOutputFile(listOfFloat, arguments.getPath() +
+                arguments.getPrefix() + "floats.txt", arguments.isBoolUpdate());
         listOfFile.add(fileOfFloat);
-        File fileOfString = WriteToOutputFile.writeToOutputFile(listOfString, arguments.getPath() + arguments.getPrefix() + "strings.txt", arguments.isBoolUpdate());
+        File fileOfString = WriteToOutputFile.writeToOutputFile(listOfString, arguments.getPath() +
+                arguments.getPrefix() + "strings.txt", arguments.isBoolUpdate());
         listOfFile.add(fileOfString);
     }
 

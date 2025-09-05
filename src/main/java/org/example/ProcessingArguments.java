@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 public class ProcessingArguments {
+
     private String prefix = "";
     private String path = "";
     private boolean boolUpdate = false;

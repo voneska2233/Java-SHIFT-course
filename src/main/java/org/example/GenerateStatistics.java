@@ -3,6 +3,7 @@ package org.example;
 import java.io.File;
 
 public class GenerateStatistics {
+
     private final ProcessingArguments arguments;
     private final ProcessingFiles files;
 
